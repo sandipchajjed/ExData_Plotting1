@@ -1,4 +1,8 @@
 ## Plot 1  Global Active Power histogram
+Url<- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+if(!file.exists("./data")){dir.create("./data")}
+download.file(Url,destfile="./data/Dataset.zip",method='curl')
+unzip(zipfile="./data/Dataset.zip",exdir="./data")
 
 # read the data
 
